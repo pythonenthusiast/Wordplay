@@ -6,7 +6,7 @@ if __name__ == "__main__":
         print >>sys.stderr, "Usage: scrabble.py [RACK]"
         sys.exit(1)
 
-    rack = list(sys.argv[1])
+    rack = list(sys.argv[1].lower())
     valid_words = []
 
     for word in wordlist:
